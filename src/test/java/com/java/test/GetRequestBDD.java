@@ -20,7 +20,7 @@ public class GetRequestBDD {
     {
       requestSpecification =
                 given().baseUri("https://bookstore.toolsqa.com/").
-                        header("Authorization", "Basic dGVzdDk4NzpUZXN0QDk4Nw==").
+                        header("Authorization", "Postman API Key").
                         header("Content-Type","application/json").
                         config(config.logConfig(LogConfig.logConfig().enableLoggingOfRequestAndResponseIfValidationFails()));
     }
@@ -32,7 +32,7 @@ public class GetRequestBDD {
         Response response = given(requestSpecification).when().get("BookStore/v1/Books").then().log().all().extract().response();
 //                            given().
 //                                    baseUri("https://bookstore.toolsqa.com/").
-//                                    header("Authorization", "Basic dGVzdDk4NzpUZXN0QDk4Nw==").
+//                                    header("Authorization", "Postman API Key").
 //                                    header("Content-Type","application/json").
 //                                    config(config.logConfig(LogConfig.logConfig().enableLoggingOfRequestAndResponseIfValidationFails())).
 //                            when().
