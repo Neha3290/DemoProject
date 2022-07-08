@@ -31,7 +31,7 @@ public class createWorkspace {
 
 //        RequestSpecification requestSpecification = given().
 //                                                    baseUri("https://api.getpostman.com").
-//                                                    header("x-api-key", "PMAK-62b55b4042db1f42c79759e2-37cc1057caf79759421738e938eb0ff67e").
+//                                                    header("x-api-key","x-api-key-value").
 //                                                    header("Content-Type","application/json");
 //
 //        ResponseSpecification responseSpecification = expect().
@@ -41,7 +41,7 @@ public class createWorkspace {
 
         RequestSpecBuilder requestSpecBuilder = new RequestSpecBuilder().
                 setBaseUri("https://api.getpostman.com").
-                addHeader("x-api-key", "PMAK-62b55b4042db1f42c79759e2-37cc1057caf79759421738e938eb0ff67e").
+                addHeader("x-api-key", "x-api-key-value").
                 addHeader("Content-Type","application/json").
                 log(LogDetail.ALL);
         RestAssured.requestSpecification = requestSpecBuilder.build();
